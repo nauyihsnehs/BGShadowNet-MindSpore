@@ -14,7 +14,7 @@ You can obtain RDD dataset from [here](https://github.com/hyyh1314/RDD)
 
 ## Pretrained model
 
-Download the [pretrained model](https://github.com/nauyihsnehs/BGShadowNet-MindSpore/releases) trained on RDD dataset. 
+Download the MindSpore [pretrained model](https://github.com/nauyihsnehs/BGShadowNet-MindSpore/releases) trained on RDD dataset. 
 
 ## Cite
 
