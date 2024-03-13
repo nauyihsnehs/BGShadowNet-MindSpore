@@ -16,7 +16,7 @@ logger = getLogger(__name__)
 class Config:
     """Experimental configuration class."""
 
-    model: str = "BGShadowNet"
+    model: str = "bedsrnet  "
     pretrained: bool = True
 
     batch_size: int = 32

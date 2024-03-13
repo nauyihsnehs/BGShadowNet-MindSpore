@@ -56,7 +56,7 @@ class TrainLogger(object):
             index=self.columns,
         )
 
-        self.df = self.df.append(tmp, ignore_index=True)
+        self.df = pd.concat([tmp, self.df], ignore_index=True)
         self._save_log()
 
         logger.info(
@@ -65,7 +65,7 @@ class TrainLogger(object):
         )
 
 
-class TrainLoggerBGShadowNet(object):
+class TrainLoggerBEDSRNet(object):
     def __init__(self, log_path: str, resume: bool) -> None:
         self.log_path = log_path
         self.columns = [
@@ -125,7 +125,7 @@ class TrainLoggerBGShadowNet(object):
             index=self.columns,
         )
 
-        self.df = self.df.append(tmp, ignore_index=True)
+        self.df = pd.concat([tmp, self.df], ignore_index=True)
         self._save_log()
 
         logger.info(

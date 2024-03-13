@@ -14,15 +14,8 @@ class DatasetCSV:
 
 
 DATASET_CSVS = {
-    # paths from `src` directory
     "Jung": DatasetCSV(
-        train="./csv/Jung/train.csv",
         val="./csv/Jung/val.csv",
         test="./csv/Jung/test.csv",
-    ),
-    "RDD": DatasetCSV(
-        train="./csv/RDD/train.csv",
-        val="./csv/RDD/val.csv",
-        test="./csv/RDD/test.csv",
     ),
 }

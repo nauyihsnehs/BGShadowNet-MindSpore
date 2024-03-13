@@ -6,16 +6,16 @@ import cv2
 import pandas as pd
 import os
 
+
 def get_average_color(x):
     b, g, r = x[:, 0], x[:, 1], x[:, 2]
-
     return np.array([np.mean(b), np.mean(g), np.mean(r)])
 
 df = pd.DataFrame()
-phase = 'test'
-img_path ='./dataset/Jung/'+phase+'/img/'#阴影图片
-root_path ='./dataset/Jung/'+phase+'/gt/'#无阴影图片
-back_gt_apth ='./dataset/Jung/'+phase+'/back_gt/'#真实的背景图片
+phase = 'val'
+img_path ='/mnt/data/xxx/Dataset/xxx/'+phase+'/input/'#阴影图片
+root_path ='/mnt/data/xxx/Dataset/xxx/'+phase+'/gt/'#无阴影图片
+back_gt_apth ='/mnt/data/xxx/Dataset/xxx/'+phase+'/back_gt/'#真实的背景图片
 paths = os.listdir(root_path)
 paths.sort()
 img_paths = []
@@ -69,5 +69,5 @@ df['gt'] = gt_paths
 df['back_gt'] = back_gt_apths
 df['B'], df['G'], df['R'] = background_colors[0], background_colors[1], background_colors[2]
 
-df.to_csv('./csv/Jung/'+phase+'.csv')
+df.to_csv('../csv/xxx/'+phase+'.csv')
 

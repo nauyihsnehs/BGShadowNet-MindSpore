@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+
 def fix_model_state_dict(state_dict):
     """
     remove 'module.' of dataparallel
@@ -11,4 +12,3 @@ def fix_model_state_dict(state_dict):
             name = name[7:]
         new_state_dict[name] = v
     return new_state_dict
-
