@@ -1,6 +1,6 @@
 # BGShadowNet-MindSpore
 
-### MindSpore implement of 
+### Official MindSpore implement of 
 
 Document Image Shadow Removal Guided by Color-Aware Background (CVPR 23)
 
